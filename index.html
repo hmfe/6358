@@ -18,31 +18,39 @@
       </p>
     <![endif]-->
 
-    <main class="main">
-      <section class="search">
-        <input
-          type="text"
-          id="search__input"
-          class="search__input"
-          name="q"
-          placeholder="Search countries..."
-          aria-label="Search countries"
-        />
+    <section class="task-wrapper">
+      <h2>Task #1</h2>
+      <button class="delete-button">Delete</button>
+    </section>
 
-        <ul id="search__results" class="search__results"></ul>
-      </section>
+    <section class="task-wrapper">
+      <h2>Task #3</h2>
+      <main class="main">
+        <section class="search">
+          <input
+            type="text"
+            id="search__input"
+            class="search__input"
+            name="q"
+            placeholder="Search countries..."
+            aria-label="Search countries"
+          />
 
-      <section class="history">
-        <div class="flex-space-between">
-          <p class="history__title">Search history</p>
-          <button id="btn--clear-history" class="btn btn--clear-history">
-            Clear search history
-          </button>
-        </div>
+          <ul id="search__results" class="search__results"></ul>
+        </section>
 
-        <ul id="history__list" class="history__list"></ul>
-      </section>
-    </main>
+        <section class="history">
+          <div class="flex-space-between">
+            <p class="history__title">Search history</p>
+            <button id="btn--clear-history" class="btn btn--clear-history">
+              Clear search history
+            </button>
+          </div>
+
+          <ul id="history__list" class="history__list"></ul>
+        </section>
+      </main>
+    </section>
 
     <script src="js/main.js"></script>
   </body>
