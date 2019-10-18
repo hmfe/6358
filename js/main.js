@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
         li.onclick = selectItem;
       }
     });
-  }, 1000);
+  }, 300);
 
   function handleInput(e) {
     // We are only interested in letters A-Z.
