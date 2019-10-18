@@ -1,0 +1,230 @@
+/******************** start GENERAL ********************/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #333;
+  font-size: 1.8rem;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.task-wrapper {
+  margin: 8rem 0;
+}
+
+.main {
+  background-color: #eee;
+  padding: 1rem
+}
+
+/******************** end GENERAL ********************/
+
+
+/******************** start TASK #1 'CSS-wizardry' ********************/
+.delete-button {
+  background-color: orange;
+  border: 1px solid #aaa;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.6rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.delete-button:after {
+  content: "\00d7";
+  color: #333;
+  background-color: #fff;
+  border-radius: 100px;
+  font-size: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+/******************** end TASK #1 'CSS-wizardry' ********************/
+
+
+/******************** start UTILITY CLASSES ********************/
+.btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  cursor: pointer;
+}
+
+.flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/******************** end UTILITY CLASSES ********************/
+
+
+/******************** start SEARCH ********************/
+.loader {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  right: auto;
+  left: auto;
+  margin: auto;
+}
+
+.search {
+  position: relative;
+}
+
+.search__input {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  padding: 2rem;
+  outline: 0;
+  width: 100%;
+}
+
+.search__input:focus {
+  border-color: #bbb
+}
+
+.search__results {
+  background-color: #fff;
+  border: 2px solid #bbb;
+  display: none;
+  margin-top: 2px;
+  overflow: auto;
+  padding: 2rem;
+  height: 20rem;
+  position: relative;
+  width: 100%;
+}
+
+.search__results.visible {
+  display: block;
+}
+
+.search__results-item {
+  cursor: pointer;
+  margin: 0.2rem 0;
+}
+
+.search__results-item:hover {
+  background-color: #eee;
+}
+
+/******************** end SEARCH ********************/
+
+
+/******************** start HISTORY ********************/
+.history {
+  padding: 2rem;
+}
+
+.history__title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.btn--clear-history {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.history__row {
+  border-top: 1px solid #ccc;
+}
+
+.history__row:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.history__row-title {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  flex-basis: 55%;
+}
+
+.history__row-timestamp {
+  color: #aaa;
+  font-size: 1.2rem;
+  margin: 0 2rem 0 0;
+  text-transform: uppercase;
+}
+
+.btn--delete-row {
+  font-size: 3rem;
+  color: #aaa;
+}
+
+.btn--delete-row:hover {
+  color: #333;
+}
+
+/******************** end HISTORY ********************/
+
+
+
+/******************** start LOADER ********************/
+.loader {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.loader .bounce {
+  background-color: #ccc;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 100%;
+  display: inline-block;
+  animation: bouncedelay 1.2s infinite ease-in-out both;
+}
+
+.loader .bounce--1 {
+  animation-delay: -0.32s;
+}
+
+.loader .bounce--2 {
+  animation-delay: -0.16s;
+}
+
+@keyframes bouncedelay {
+
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(0.7);
+  }
+}
+
+/******************** end LOADER ********************/
